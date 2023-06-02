@@ -1,0 +1,103 @@
+.bg-container{
+    background-color: white;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    padding-bottom: 25px;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: -11px 16px 114px 9px rgba(0,0,0,0.176);
+}
+
+.head{
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.marginers{
+    margin-top: 20px;
+}
+
+
+.userErrorMsg{
+    color: red;
+    font-family: Roboto;
+    font-size: 500;
+}
+
+.errorMsg{
+    border-color: red;
+    border-radius: 4px solid;
+}
+
+.errorMsgcl{
+    border-color: green;
+    border-radius: 10px solid;
+}
+
+.passErrorMsg{
+    color: red;
+    font-family: Roboto;
+    font-size: 500;
+}
+
+.conPassErrorMsg{
+    color: red;
+    font-family: Roboto;
+    font-size: 500;
+}
+.eye-icon{
+    float: right;
+    margin-top: -25px;
+    margin-right: 7px;
+}
+
+@media (min-width: 1024px){
+    .container{
+        background-color: white;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1746px){
+    .container{
+        background-color: white;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1746px){
+    .container{
+        background-color: white;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-width: 1px){
+    .container{
+        background-color: white;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+*body{
+    border: 5px solid red;
+}
