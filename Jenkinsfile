@@ -6,6 +6,7 @@ pipeline {
                 git branch: 'main', credentialsId: '56513d36-0bf7-4771-849c-1640f4d97c1d', url: 'https://github.com/CT-RaviTeja66/Signupform.git'               }   
                }
            }    
+}
         stage('Build') {
             steps {
                 sh """
@@ -19,4 +20,3 @@ pipeline {
         // Add more stages for your pipeline
         // ...
     }
-}
