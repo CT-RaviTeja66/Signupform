@@ -1,9 +1,9 @@
 pipeline {
-    agent { label '10.100.30.83' }
+    agent { label 'ravi 10.100.30.83' }
         stage('Clone repository') {
             steps {
-                dir('/home/raviteja') {
-                git branch: 'main', credentialsId: '56513d36-0bf7-4771-849c-1640f4d97c1d', url: 'https://github.com/CT-RaviTeja66/Signupform.git'   
+                dir('/data/vhosts/localhost/httpdocs/raviteja/') {
+                git branch: 'main', credentialsId: '1c3fe346-10e7-4dc5-b55c-b6d40ff50124', url: 'https://github.com/CT-RaviTeja66/Signupform.git'   
                }
            }    
         }
