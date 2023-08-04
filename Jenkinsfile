@@ -1,5 +1,6 @@
 pipeline {
     agent { label 'ravi 10.100.30.83' }
+    stages {
         stage('Clone repository') {
             steps {
                 dir('/data/vhosts/localhost/httpdocs/raviteja/') {
@@ -7,4 +8,5 @@ pipeline {
                }
            }    
         }
+    }
 }
