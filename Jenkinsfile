@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'ravi 10.100.30.83' }
+    agent { label 'ravi10.100.30.83' }
     stages {
         stage('Clone repository') {
             steps {
