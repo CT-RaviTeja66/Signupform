@@ -7,16 +7,6 @@ pipeline {
                }
            }    
         }
-        stage('Build') {
-            steps {
-                sh """
-                    hostname
-                    cd '/home/raviteja'
-                    ls
-                """
-            }
-        }
-        
         // Add more stages for your pipeline
         // ...
     }
