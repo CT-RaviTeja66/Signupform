@@ -1,6 +1,6 @@
 pipeline {
     agent { label 'teja10.100.30.83' }
-    stages {
+    stages { 
         stage('Clone repository') {
             environment {
                 GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
