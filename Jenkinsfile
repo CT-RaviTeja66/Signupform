@@ -38,17 +38,17 @@ pipeline {
         }
 
     }
-    post {
-        success {
-            mail to: "raviteja.g@cartrade.com,graviteja9866@gmail.com",
-            subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
-            body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"
-        } 
-        failure {
-            mail to: "raviteja.g@cartrade.com,graviteja9866@gmail.com",
-            subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
-            body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL} Failed stage at: ${FAILED_STAGE}"
-            echo "Failed stage name: ${FAILED_STAGE}"
-        }
-    }  
+    // post {
+    //     success {
+    //         mail to: "raviteja.g@cartrade.com,graviteja9866@gmail.com",
+    //         subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
+    //         body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"
+    //     } 
+    //     failure {
+    //         mail to: "raviteja.g@cartrade.com,graviteja9866@gmail.com",
+    //         subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
+    //         body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL} Failed stage at: ${FAILED_STAGE}"
+    //         echo "Failed stage name: ${FAILED_STAGE}"
+    //     }
+    // }  
 }
