@@ -32,7 +32,7 @@ pipeline {
                         sh "aws s3 cp s3://${s3Bucket}/${s3Key} ${localFilePath}"
                     }
             
-                    echo "Downloaded file from S3 and saved it to ${localFilePath}"
+                    echo "Downloaded file from S3 and saved it to ${localFilePath}" 
                 }
             }
         }
